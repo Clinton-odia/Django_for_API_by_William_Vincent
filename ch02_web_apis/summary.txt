@@ -1,0 +1,64 @@
+## 🌐 What is a Web API?
+
+A **Web API (Application Programming Interface)** is a way for applications to talk to each other over the internet. Instead of sending HTML for a browser, an API sends **data** (usually JSON) that can be consumed by:
+
+* Web apps (React, Vue, Angular, etc.)
+* Mobile apps (iOS, Android)
+* Other backend services (microservices, 3rd-party apps)
+
+---
+
+## 🔑 Key Ideas in Web APIs
+
+1. **Endpoints**
+
+   * URLs that represent resources.
+   * Example: `/api/books/` → list all books, `/api/books/1/` → get book with ID 1.
+
+2. **HTTP Methods** (CRUD pattern)
+
+   * **GET** → Read data
+   * **POST** → Create new data
+   * **PUT/PATCH** → Update existing data
+   * **DELETE** → Remove data
+
+3. **Format**
+
+   * Most modern APIs use **JSON** for data exchange.
+   * Example:
+
+     ```json
+     {
+       "id": 1,
+       "title": "Django for APIs",
+       "author": "William Vincent"
+     }
+     ```
+
+4. **Authentication & Permissions**
+
+   * APIs often require authentication (like tokens, JWT, OAuth) to protect resources.
+
+---
+
+## 🚀 Why APIs Are Important
+
+* **Separation of concerns**: Backend focuses on data & logic, frontend focuses on UI.
+* **Reusability**: The same API can serve web, mobile, or even other companies.
+* **Scalability**: Easier to grow apps by connecting multiple services.
+* **Industry standard**: Every serious app you know (Twitter, Spotify, PayPal) exposes APIs.
+
+---
+
+## 🔄 Django’s Role
+
+Django REST Framework makes building **Web APIs** much easier by giving you tools like:
+
+* **Serializers** (turn models into JSON)
+* **Generic Views/ViewSets** (shortcut for CRUD endpoints)
+* **Browsable API** (web UI for testing your API)
+
+---
+
+👉 **Summary:**
+A **Web API** is like a contract that defines *how apps can talk to your server*. Instead of serving HTML pages, you’re serving raw data (JSON). With Django REST Framework, you can turn any Django model into an API endpoint with just a few lines of code.
